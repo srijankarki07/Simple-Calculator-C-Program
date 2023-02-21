@@ -26,18 +26,25 @@ int main() {
     float valueOne, valueTwo, answer;
     char operator;
 
-
+    printf("Welcome to Simple Calculator!\n");
     // Prompt the user to enter a calculation in the specified format
-    printf("Enter your calculation in the format: valueOne operator valueTwo\n");
+    printf("Enter your calculation in the format: Number1 operator Number2\n");
 
-    // Input values
-    scanf("%f %c %f", &valueOne, &operator, &valueTwo);
+    // Check if input is valid
+    if (scanf("%f %c %f", &valueOne, &operator, &valueTwo) != 3) {
+        printf("Invalid input. Please provide valid input.\n");
+        return 1;
+    }
 
     // Perform the calculation using the calculate function
     answer = calculate(valueOne, operator, valueTwo);
 
-    // Display the result
-    printf("%.2f %c %.2f = %.6f\n", valueOne, operator, valueTwo, answer);
+    // Check if the calculation is valid
+    if (!isnan(answer)) {
+        printf("%.2f %c %.2f = %.6f\n", valueOne, operator, valueTwo, answer);
+    } else {
+        printf("Invalid input or calculation.\n");
+    }
 
     // Return 0 to indicate successful execution
     return 0;
