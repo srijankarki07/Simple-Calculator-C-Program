@@ -7,12 +7,12 @@ float calculate(float valueOne, char operator, float valueTwo) {
 
     // Switch statement to determine the operation based on the provided operator
     switch (operator) {
-        case '/': result = valueOne / valueTwo; break;
+        case '/': result = valueTwo != 0 ? valueOne / valueTwo : NAN; break;
         case '*': result = valueOne * valueTwo; break;
         case '+': result = valueOne + valueTwo; break;
         case '-': result = valueOne - valueTwo; break;
         case '^': result = pow(valueOne, valueTwo); break;
-        case ' ': result = sqrt(valueTwo); break;
+        case ' ': result = valueTwo >= 0 ? sqrt(valueTwo) : NAN; break;
         default: result = NAN; // Use NAN for undefined values
     }
 

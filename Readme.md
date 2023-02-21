@@ -26,4 +26,8 @@ This is a simple C program that functions as a calculator that I did during my f
     -   The program expects the user to input values in the format "valueOne operator valueTwo" (e.g., "5.0 + 3.0").
     -   Outputs the calculated result with a precision of six decimal places.
     -   Prints an error message if the input or calculation is invalid.
-- 
+
+
+- **Error Handling:**
+
+    - The program checks for division by zero and negative square roots, assigning NAN (Not a Number) to the result in case of an undefined or invalid operation.
