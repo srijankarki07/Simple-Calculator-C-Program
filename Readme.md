@@ -31,3 +31,5 @@ This is a simple C program that functions as a calculator that I did during my f
 - **Error Handling:**
 
     - The program checks for division by zero and negative square roots, assigning NAN (Not a Number) to the result in case of an undefined or invalid operation.
+
+##Output

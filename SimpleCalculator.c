@@ -41,7 +41,7 @@ int main() {
 
     // Check if the calculation is valid
     if (!isnan(answer)) {
-        printf("%.2f %c %.2f = %.6f\n", valueOne, operator, valueTwo, answer);
+        printf("Reslut of %.2f %c %.2f = %.6f\n", valueOne, operator, valueTwo, answer);
     } else {
         printf("Invalid input or calculation.\n");
     }
