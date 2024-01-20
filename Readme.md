@@ -32,4 +32,5 @@ This is a simple C program that functions as a calculator that I did during my f
 
     - The program checks for division by zero and negative square roots, assigning NAN (Not a Number) to the result in case of an undefined or invalid operation.
 
-##Output
+# Output
+![Screenshot from 2024-01-20 10-00-53](https://github.com/srijankarki07/Simple-Calculator-C-Program/assets/136587234/3ddb178d-d3a9-4e1d-8547-2f61fedd1d54)
